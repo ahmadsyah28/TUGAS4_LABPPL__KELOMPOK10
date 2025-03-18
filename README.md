@@ -1,7 +1,7 @@
 # Sistem API Sederhana
 
 ## Deskripsi Proyek
-Proyek ini merupakan API sederhana yang dibuat menggunakan Express.js untuk mengelola data anime. API ini memungkinkan pengguna untuk melihat daftar anime, mendapatkan detail anime tertentu, serta menambahkan anime baru ke dalam database JSON. Selain backend, proyek ini juga memiliki frontend sederhana untuk menampilkan dan mengelola data anime.
+Anime Collection Manager adalah aplikasi berbasis web yang memungkinkan pengguna untuk menambahkan, mencari, dan mengelola koleksi anime mereka. Aplikasi ini menyediakan fitur untuk menampilkan statistik koleksi anime seperti jumlah total anime, rata-rata jumlah episode, dan rata-rata rating.
 
 ## Struktur Proyek
 
@@ -30,8 +30,7 @@ client/
 Mengembalikan daftar semua anime yang tersedia di database.
 
 #### Contoh Respons:
-```json
-{
+```{
     "data": [
         {
             "id": 1,
@@ -53,8 +52,7 @@ Mengembalikan daftar semua anime yang tersedia di database.
 Mengembalikan detail anime berdasarkan ID yang diberikan.
 
 #### Contoh Respons:
-```json
-{
+```{
     "id": 1,
     "title": "Naruto",
     "genre": "Action",
@@ -66,8 +64,7 @@ Mengembalikan detail anime berdasarkan ID yang diberikan.
 Menambahkan anime baru ke database dengan data dalam format JSON.
 
 #### Contoh Permintaan:
-```json
-{
+```{
     "title": "Attack on Titan",
     "genre": "Fantasy",
     "rating": 9.2
@@ -75,8 +72,7 @@ Menambahkan anime baru ke database dengan data dalam format JSON.
 ```
 
 #### Contoh Respons:
-```json
-{
+```{
     "message": "Anime berhasil ditambahkan",
     "data": {
         "id": 3,
@@ -87,10 +83,10 @@ Menambahkan anime baru ke database dengan data dalam format JSON.
 }
 ```
 
-## Nilai Tambahan
-Selain fitur wajib, API ini juga memiliki fitur tambahan seperti:
-- Mengupdate data anime (PUT /anime/:id)
-- Menghapus anime dari database (DELETE /anime/:id)
+## Fitur Tambahan
+Selain fitur utama, API ini juga menyediakan:
+Mengupdate data anime (PUT /anime/:id)
+Menghapus anime dari database (DELETE /anime/:id)
 
 ## Cara Menjalankan Backend
 1. Pastikan Node.js telah terinstal di sistem.
