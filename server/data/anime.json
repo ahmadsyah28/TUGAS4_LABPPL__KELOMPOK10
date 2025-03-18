@@ -1,0 +1,36 @@
+{
+  "anime": [
+    {
+      "id": 1,
+      "title": "Attack on Titan",
+      "genre": "Action, Drama, Fantasy",
+      "episodes": 75,
+      "rating": 9,
+      "studio": "MAPPA"
+    },
+    {
+      "id": 2,
+      "title": "My Hero Academia",
+      "genre": "Action, Comedy",
+      "episodes": 113,
+      "rating": 8.4,
+      "studio": "Bones"
+    },
+    {
+      "id": 3,
+      "title": "Demon Slayer",
+      "genre": "Action, Fantasy",
+      "episodes": 44,
+      "rating": 8.9,
+      "studio": "ufotable"
+    },
+    {
+      "id": 4,
+      "title": "naruto",
+      "genre": "action",
+      "episodes": 25,
+      "rating": 6,
+      "studio": "MAPPA"
+    }
+  ]
+}

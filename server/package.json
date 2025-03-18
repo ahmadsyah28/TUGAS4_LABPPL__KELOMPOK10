@@ -1,0 +1,36 @@
+{
+    "name": "anime-api",
+    "version": "1.0.0",
+    "description": "Simple Anime API with Express",
+    "main": "dist/app.js",
+    "scripts": {
+        "start": "node dist/app.js",
+        "dev:server": "nodemon --exec ts-node app.ts",
+        "dev:client": "tsc -p tsconfig.client.json --watch",
+        "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+        "build:server": "tsc -p tsconfig.json",
+        "build:client": "tsc -p tsconfig.client.json",
+        "build": "npm run build:server && npm run build:client"
+    },
+    "keywords": [
+        "express",
+        "api",
+        "anime"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "fs": "^0.0.1-security"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/node": "^22.13.10",
+        "concurrently": "^8.2.2",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    }
+}

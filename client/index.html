@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Collection Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Anime Collection Manager</h1>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search anime...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="anime-form-container">
+                <h2>Add New Anime</h2>
+                <form id="animeForm">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre" required placeholder="e.g. Action, Fantasy">
+                    </div>
+                    <div class="form-group">
+                        <label for="episodes">Episodes</label>
+                        <input type="number" id="episodes" required min="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="number" id="rating" min="0" max="10" step="0.1" placeholder="0-10">
+                    </div>
+                    <div class="form-group">
+                        <label for="studio">Studio</label>
+                        <input type="text" id="studio" placeholder="e.g. MAPPA">
+                    </div>
+                    <button type="submit" id="submitBtn">Add Anime</button>
+                    <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+                </form>
+            </div>
+
+            <div class="anime-collection">
+                <h2>Anime Collection</h2>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <h3>Total Anime</h3>
+                        <p id="totalAnime">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Avg. Episodes</h3>
+                        <p id="avgEpisodes">0</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Avg. Rating</h3>
+                        <p id="avgRating">0</p>
+                    </div>
+                </div>
+                <div id="animeList" class="anime-grid">
+                    <!-- Anime cards will be generated here -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal for viewing anime details -->
+        <div id="animeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="animeDetails">
+                    <!-- Anime details will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
